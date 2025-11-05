@@ -154,6 +154,7 @@ extern "C" {
 #if defined(__GNUC__) && defined(__AVR__)
 #  define U8X8_FONT_SECTION(name) U8X8_SECTION(".progmem." name)
 #  define u8x8_pgm_read(adr) pgm_read_byte_near(adr)
+#  define u8x8_pgm_read_far(farAdr) pgm_read_byte_far(farAdr)
 #  define U8X8_PROGMEM PROGMEM
 #endif
 

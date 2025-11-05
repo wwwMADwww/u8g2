@@ -255,6 +255,8 @@ class U8G2
       { u8g2_DrawXBM(&u8g2, x, y, w, h, bitmap); }
     void drawXBMP(u8g2_uint_t x, u8g2_uint_t y, u8g2_uint_t w, u8g2_uint_t h, const uint8_t *bitmap)
       { u8g2_DrawXBMP(&u8g2, x, y, w, h, bitmap); }
+    void drawXBMP_far(u8g2_uint_t x, u8g2_uint_t y, u8g2_uint_t w, u8g2_uint_t h, const uint32_t bitmapFarAddr)
+      { u8g2_DrawXBMP_far(&u8g2, x, y, w, h, bitmapFarAddr); }
     
     
     /* u8g2_polygon.c */
